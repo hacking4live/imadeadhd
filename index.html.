@@ -26,16 +26,12 @@
     .background {
       position: fixed;
       inset: 0;
-      background:
-        radial-gradient(circle at 50% 40%, #252525 0%, #101010 35%, #050505 75%);
-      z-index: -2;
-    }
-
-    .background::after {
-      content: "";
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,.35);
+      background: radial-gradient(
+        circle at 50% 40%,
+        #252525 0%,
+        #101010 35%,
+        #050505 75%
+      );
       z-index: -1;
     }
 
@@ -50,15 +46,13 @@
       height: 105px;
       border-radius: 50%;
       object-fit: cover;
-      border: 3px solid rgba(255,255,255,.15);
-      box-shadow: 0 0 35px rgba(255,255,255,.12);
+      border: 3px solid rgba(255,255,255,0.15);
       margin-bottom: 18px;
     }
 
     h1 {
       font-size: 32px;
       font-weight: 700;
-      letter-spacing: -1px;
     }
 
     .username {
@@ -72,7 +66,6 @@
       color: #ccc;
       font-size: 15px;
       line-height: 1.6;
-      max-width: 480px;
     }
 
     .links {
@@ -86,34 +79,16 @@
       display: block;
       text-decoration: none;
       color: white;
-      background: rgba(255,255,255,.06);
-      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
       padding: 15px;
       border-radius: 12px;
-      transition: .2s;
-      backdrop-filter: blur(10px);
+      transition: 0.2s;
     }
 
     .link:hover {
       transform: translateY(-2px);
-      background: rgba(255,255,255,.11);
-      border-color: rgba(255,255,255,.2);
-    }
-
-    .stats {
-      display: flex;
-      justify-content: center;
-      gap: 35px;
-      margin-top: 28px;
-      color: #888;
-      font-size: 13px;
-    }
-
-    .stats strong {
-      display: block;
-      color: white;
-      font-size: 16px;
-      margin-bottom: 3px;
+      background: rgba(255,255,255,0.11);
     }
 
     .footer {
@@ -130,12 +105,7 @@
 
   <main class="profile">
 
-    <!-- CHANGE THIS IMAGE URL TO YOUR PROFILE PICTURE -->
-    <img
-      class="avatar"
-      src="https://i.imgur.com/placeholder.png"
-      alt="Profile picture"
-    >
+    <div class="avatar"></div>
 
     <h1>imadeadhd</h1>
 
@@ -147,7 +117,6 @@
     </p>
 
     <div class="links">
-
       <a class="link" href="https://discord.com/" target="_blank">
         Discord
       </a>
@@ -159,24 +128,6 @@
       <a class="link" href="https://guns.lol/imadeadhd" target="_blank">
         guns.lol
       </a>
-
-    </div>
-
-    <div class="stats">
-      <div>
-        <strong>16</strong>
-        Age
-      </div>
-
-      <div>
-        <strong>🇦🇺</strong>
-        Australia
-      </div>
-
-      <div>
-        <strong>∞</strong>
-        Online
-      </div>
     </div>
 
     <div class="footer">
